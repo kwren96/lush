@@ -6,13 +6,7 @@ const images = {
 
 export default class ProductDisplay extends Component {
   render() {
-    const {
-      title,
-      media,
-      average_rating_percentage,
-      certification,
-      preservatives_free
-    } = this.props.product;
+    const { title, media, certification } = this.props.product;
 
     return (
       <div

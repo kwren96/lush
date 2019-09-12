@@ -9,24 +9,54 @@
   width: 23vw;
   height: auto;
   border-radius: 25px;
-}
-
-.product-display {
   text-align: center;
 }
 
-.product-display .rating {
-  
+.product-display:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .product-display .commerce-image {
   width: 100%;
   height: 80%;
-  border-radius: 25px 25px 0px 0px;
 }
 
 .product-display .certification {
   height: 4vh;
   width: auto;
   bottom: 0;
+}
+
+.product-information {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: 90vh;
+  padding: 2vh;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.hero-image {
+  width: 60vw;
+  padding: 3vh;
+  height: 60vh;
+}
+
+.button {
+  border-style: double;
+  float: right;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  padding: 5px 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: rgb(3, 3, 3);
+  color: white;
 }
