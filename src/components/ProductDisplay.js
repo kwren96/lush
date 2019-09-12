@@ -15,7 +15,10 @@ export default class ProductDisplay extends Component {
     } = this.props.product;
 
     return (
-      <div className="product-display">
+      <div
+        className="product-display"
+        onClick={e => this.props.displayProductInformation(this.props.product)}
+      >
         <img
           className="commerce-image"
           src={media["commerce_image"]}

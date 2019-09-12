@@ -8,7 +8,11 @@ export default class ProductContainer extends Component {
       //then pass one product to each product display component
       <div className="product-container">
         {this.props.products.map(product => (
-          <ProductDisplay key={product.id} product={product} />
+          <ProductDisplay
+            key={product.id}
+            product={product}
+            displayProductInformation={this.props.displayProductInformation}
+          />
         ))}
       </div>
     );
